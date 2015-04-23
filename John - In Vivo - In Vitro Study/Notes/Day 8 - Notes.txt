@@ -1,0 +1,7 @@
+
+Day 8 Notes
+
+Standard Curve - second 1% is actually a 10% measurement
+
+Fluorescnece in fabrication controls could be ineffective gluing on the needle 
+Check the device for evidence of failure location - could by structural glue joints or ineffective gluing/sealing of the needle

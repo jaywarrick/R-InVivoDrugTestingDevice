@@ -1,0 +1,29 @@
+Sample ID	User ID	Date 	Time 	Gain 	Conc. 	Units 	Norm. coeff.	Formula 	RFU 	nm1 	LED 
+.0001%	Default	4/6/2015	4:52 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+.001%	Default	4/6/2015	4:52 AM	10.00	NaN	RFU	1.00	nm1	26.9	514	Blue
+.01%	Default	4/6/2015	4:53 AM	10.00	NaN	RFU	1.00	nm1	292.1	514	Blue
+.1%	Default	4/6/2015	4:53 AM	6.44	NaN	RFU	1.00	nm1	3056.1	514	Blue
+1%	Default	4/6/2015	4:53 AM	0.72	NaN	RFU	1.00	nm1	27164.9	514	Blue
+10%	Default	4/6/2015	4:53 AM	0.04	NaN	RFU	1.00	nm1	249586.7	514	Blue
+BLANK	Default	4/6/2015	4:54 AM	10.00	NaN	RFU	1.00	nm1	74.9	514	Blue
+BLANK	Default	4/6/2015	4:54 AM	10.00	NaN	RFU	1.00	nm1	19.4	514	Blue
+BLANK	Default	4/6/2015	4:55 AM	10.00	NaN	RFU	1.00	nm1	4.1	514	Blue
+BLANK	Default	4/6/2015	4:55 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas - E1	Default	4/6/2015	4:56 AM	1.76	NaN	RFU	1.00	nm1	11317.7	514	Blue
+Meas - E2	Default	4/6/2015	4:56 AM	1.88	NaN	RFU	1.00	nm1	10452.7	514	Blue
+Meas - E3	Default	4/6/2015	4:56 AM	1.72	NaN	RFU	1.00	nm1	11504.5	514	Blue
+Meas - E4	Default	4/6/2015	4:57 AM	1.92	NaN	RFU	1.00	nm1	10399.7	514	Blue
+Meas - E5	Default	4/6/2015	4:57 AM	1.88	NaN	RFU	1.00	nm1	10520.7	514	Blue
+Meas - E6	Default	4/6/2015	4:57 AM	2.00	NaN	RFU	1.00	nm1	9916.3	514	Blue
+Meas - E7	Default	4/6/2015	4:57 AM	1.72	NaN	RFU	1.00	nm1	11631.7	514	Blue
+Meas - E8	Default	4/6/2015	4:58 AM	1.80	NaN	RFU	1.00	nm1	11060.3	514	Blue
+Meas - E9	Default	4/6/2015	4:58 AM	1.68	NaN	RFU	1.00	nm1	11807.8	514	Blue
+Meas - E10	Default	4/6/2015	4:58 AM	1.80	NaN	RFU	1.00	nm1	11054.4	514	Blue
+Meas - E11	Default	4/6/2015	4:59 AM	3.96	NaN	RFU	1.00	nm1	5058.0	514	Blue
+Meas - E12	Default	4/6/2015	4:59 AM	1.72	NaN	RFU	1.00	nm1	11619.7	514	Blue
+Meas - E13	Default	4/6/2015	4:59 AM	1.60	NaN	RFU	1.00	nm1	12498.5	514	Blue
+Meas - E14	Default	4/6/2015	4:59 AM	1.48	NaN	RFU	1.00	nm1	13249.3	514	Blue
+Meas - E15	Default	4/6/2015	5:00 AM	1.60	NaN	RFU	1.00	nm1	12526.3	514	Blue
+Meas - E16	Default	4/6/2015	5:00 AM	2.16	NaN	RFU	1.00	nm1	9324.4	514	Blue
+BLANK	Default	4/6/2015	5:00 AM	10.00	NaN	RFU	1.00	nm1	366.0	514	Blue
+BLANK	Default	4/6/2015	5:01 AM	10.00	NaN	RFU	1.00	nm1	0.6	514	Blue

@@ -1,0 +1,4 @@
+Meas under <100 RFU (if taken after a high intensity image RFU>8000) 
+can probably be considered a no leak. See Blank meas taken ~Meas 16 which has high fluorescence
+
+Use day 15 - revised --- There were some measurement duplicates and labeling errors in the original which have been removed and fixed

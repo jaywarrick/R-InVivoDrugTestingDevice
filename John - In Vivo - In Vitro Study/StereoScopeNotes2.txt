@@ -1,0 +1,88 @@
+# a) Confirmed glue at needle tip
+# b) Glue delaminating from tip
+# c) Glue absent from needle tip
+# d) Can't tell
+# e) Potential air barrier
+# f) Glue but obvious leak path
+Device	GlueCode	BubbleLocation	Comment
+A1	b,d	Base
+A2	c	Base
+A3	a	None
+A4	a	None
+A5 	c	Base,Needle
+A6	a	Base
+A7	c	Base,Middle
+A8	c	Base	Didn't impede diffusion
+#A9
+A10	c	None	Wasn't a leaker but no glue, could have been an evaporated device
+A11	a	Base,Middle
+A12	a	Base
+A13	c	Base,Needle
+A14	a	None
+A15	c	Base,Middle
+A16	c	Base,Middle Glue at tip but not all the way in the hole
+#A17
+A18	a	None
+A19	a,d Base
+A20	a	None
+A21	a	Base	Bubbly glue, found to leak a bit
+A22	a	None
+A23	a	Base
+A24	a	Base
+A25	c	None
+A26	c	Base,Middle,Needle	Bubble on side of needle
+A27	c	Base,Needle
+A28	a	None
+A29	c	Base,Middle,Needle
+A30	c	Base
+
+B1	f	Base
+B2	f	Base
+B3	c	Base,Needle
+B4	f	Base,Middle
+B5	b,d	Base
+B6	f	Base
+B7	f	Base,Middle
+B8	f	Base
+B9	f	Base,Needle
+B10	c	Base
+B11	b,c	Base,Needle
+
+C1	c	Base,Needle
+C2	f	None
+C3	c	None
+C4	f	Base
+C5	c	Base
+C6	c	Base,Needle
+C7	c	Base,Middle
+C8	f	Middle,Needle
+C9	b,c	None
+C10	c	None
+C11	c	Base
+C12	f	Base
+C13	c	Base
+C14	c	Base
+C15	f	Base
+C16	f	Base
+C17	f	Base
+C18	f	Base,Needle
+C19	b,d	Base,Needle
+C20	1f	Base,Needle
+
+E1		Base
+E2		Base
+E3		Middle,Base
+E4		Middle,Base
+E5		Base,Needle
+E6		Base,Needle
+E7		Base,Needle
+E8		Base,Middle,Needle
+E9		Middle
+E10		Base,Needle
+E11		Base,Needle	Glue at least on lip of needle base
+E12		Middle
+E13		Base,Needle	Bubble on side of needle
+E14		Base,Middle
+E15		Base,Middle,Needle
+E16		Base
+	

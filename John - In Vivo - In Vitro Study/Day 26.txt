@@ -1,0 +1,28 @@
+Sample ID	User ID	Date 	Time 	Gain 	Conc. 	Units 	Norm. coeff.	Formula 	RFU 	nm1 	LED 
+.0001%	Default	4/18/2015	8:39 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+.001%	Default	4/18/2015	8:39 AM	10.00	NaN	RFU	1.00	nm1	6.6	514	Blue
+.01%	Default	4/18/2015	8:40 AM	10.00	NaN	RFU	1.00	nm1	258.7	514	Blue
+.1%	Default	4/18/2015	8:40 AM	7.04	NaN	RFU	1.00	nm1	2773.3	514	Blue
+1%	Default	4/18/2015	8:41 AM	0.76	NaN	RFU	1.00	nm1	26055.7	514	Blue
+10%	Default	4/18/2015	8:41 AM	0.04	NaN	RFU	1.00	nm1	248834.6	514	Blue
+Blank	Default	4/18/2015	8:42 AM	10.00	NaN	RFU	1.00	nm1	63.3	514	Blue
+Blank	Default	4/18/2015	8:42 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas E1	Default	4/18/2015	8:42 AM	1.52	NaN	RFU	1.00	nm1	13060.8	514	Blue
+Meas E2	Default	4/18/2015	8:43 AM	1.80	NaN	RFU	1.00	nm1	11079.4	514	Blue
+Meas E3	Default	4/18/2015	8:43 AM	1.64	NaN	RFU	1.00	nm1	12189.2	514	Blue
+Meas E4	Default	4/18/2015	8:43 AM	1.60	NaN	RFU	1.00	nm1	12568.2	514	Blue
+Meas E5	Default	4/18/2015	8:43 AM	1.68	NaN	RFU	1.00	nm1	11734.5	514	Blue
+Meas E6	Default	4/18/2015	8:44 AM	1.88	NaN	RFU	1.00	nm1	10504.7	514	Blue
+Meas E7	Default	4/18/2015	8:44 AM	1.52	NaN	RFU	1.00	nm1	13161.3	514	Blue
+Meas E8	Default	4/18/2015	8:45 AM	1.60	NaN	RFU	1.00	nm1	12486.9	514	Blue
+Meas E9	Default	4/18/2015	8:45 AM	1.52	NaN	RFU	1.00	nm1	12960.5	514	Blue
+Meas E10	Default	4/18/2015	8:45 AM	1.52	NaN	RFU	1.00	nm1	12962.4	514	Blue
+Meas E11	Default	4/18/2015	8:46 AM	1.80	NaN	RFU	1.00	nm1	11126.6	514	Blue
+Meas E12	Default	4/18/2015	8:46 AM	1.72	NaN	RFU	1.00	nm1	11601.7	514	Blue
+Meas E13	Default	4/18/2015	8:47 AM	1.20	NaN	RFU	1.00	nm1	16553.0	514	Blue
+Meas E14	Default	4/18/2015	8:47 AM	1.12	NaN	RFU	1.00	nm1	17672.2	514	Blue
+Meas E15	Default	4/18/2015	8:47 AM	1.36	NaN	RFU	1.00	nm1	14465.5	514	Blue
+Meas E16	Default	4/18/2015	8:48 AM	1.44	NaN	RFU	1.00	nm1	13889.6	514	Blue
+Blank	Default	4/18/2015	8:48 AM	10.00	NaN	RFU	1.00	nm1	5.8	514	Blue
+Blank	Default	4/18/2015	8:49 AM	10.00	NaN	RFU	1.00	nm1	9.2	514	Blue
+Blank	Default	4/18/2015	8:49 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue

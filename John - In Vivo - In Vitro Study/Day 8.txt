@@ -1,0 +1,93 @@
+Sample ID	User ID	Date 	Time 	Gain 	Conc. 	Units 	Norm. coeff.	Formula 	RFU 	nm1 	LED 
+.0001%	Default	3/31/2015	3:15 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+.001%	Default	3/31/2015	3:16 AM	10.00	NaN	RFU	1.00	nm1	22.8	514	Blue
+.01%	Default	3/31/2015	3:16 AM	10.00	NaN	RFU	1.00	nm1	276.8	514	Blue
+.1%	Default	3/31/2015	3:16 AM	6.44	NaN	RFU	1.00	nm1	3035.4	514	Blue
+1%	Default	3/31/2015	3:17 AM	0.68	NaN	RFU	1.00	nm1	29343.1	514	Blue
+10%	Default	3/31/2015	3:17 AM	0.04	NaN	RFU	1.00	nm1	266320.5	514	Blue
+10%-2	Default	3/31/2015	3:17 AM	0.04	NaN	RFU	1.00	nm1	261842.2	514	Blue
+Blank	Default	3/31/2015	3:19 AM	10.00	NaN	RFU	1.00	nm1	87.7	514	Blue
+Blank	Default	3/31/2015	3:19 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas - A1	Default	3/31/2015	3:22 AM	8.72	NaN	RFU	1.00	nm1	2175.6	514	Blue
+Meas - A2	Default	3/31/2015	3:22 AM	2.96	NaN	RFU	1.00	nm1	6732.8	514	Blue
+Meas - A3	Default	3/31/2015	3:22 AM	10.00	NaN	RFU	1.00	nm1	394.2	514	Blue
+Meas - A4	Default	3/31/2015	3:23 AM	10.00	NaN	RFU	1.00	nm1	178.4	514	Blue
+Meas - A5	Default	3/31/2015	3:23 AM	3.00	NaN	RFU	1.00	nm1	6578.1	514	Blue
+Meas - A6	Default	3/31/2015	3:24 AM	10.00	NaN	RFU	1.00	nm1	50.8	514	Blue
+Meas - A7	Default	3/31/2015	3:24 AM	3.04	NaN	RFU	1.00	nm1	6610.1	514	Blue
+Blank	Default	3/31/2015	3:24 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas - A8	Default	3/31/2015	3:25 AM	10.00	NaN	RFU	1.00	nm1	1741.6	514	Blue
+Meas - A9	Default	3/31/2015	3:25 AM	3.04	NaN	RFU	1.00	nm1	6586.6	514	Blue
+Meas - A10	Default	3/31/2015	3:25 AM	10.00	NaN	RFU	1.00	nm1	401.3	514	Blue
+Meas - A11	Default	3/31/2015	3:28 AM	10.00	NaN	RFU	1.00	nm1	14.5	514	Blue
+Meas - A12	Default	3/31/2015	3:28 AM	10.00	NaN	RFU	1.00	nm1	11.4	514	Blue
+Meas - A13	Default	3/31/2015	3:29 AM	3.12	NaN	RFU	1.00	nm1	6370.1	514	Blue
+Meas - A14	Default	3/31/2015	3:29 AM	10.00	NaN	RFU	1.00	nm1	93.0	514	Blue
+Meas - A15	Default	3/31/2015	3:29 AM	3.44	NaN	RFU	1.00	nm1	5772.8	514	Blue
+Meas - A16	Default	3/31/2015	3:30 AM	3.52	NaN	RFU	1.00	nm1	5686.4	514	Blue
+Meas - A17	Default	3/31/2015	3:30 AM	3.32	NaN	RFU	1.00	nm1	6024.8	514	Blue
+Meas - A18	Default	3/31/2015	3:31 AM	10.00	NaN	RFU	1.00	nm1	278.7	514	Blue
+Meas - A19	Default	3/31/2015	3:31 AM	10.00	NaN	RFU	1.00	nm1	292.0	514	Blue
+Meas - A20	Default	3/31/2015	3:31 AM	10.00	NaN	RFU	1.00	nm1	5.2	514	Blue
+Meas - A21	Default	3/31/2015	3:34 AM	10.00	NaN	RFU	1.00	nm1	5.7	514	Blue
+Meas - A22	Default	3/31/2015	3:34 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas - A23	Default	3/31/2015	3:34 AM	10.00	NaN	RFU	1.00	nm1	344.5	514	Blue
+Meas - A24	Default	3/31/2015	3:35 AM	10.00	NaN	RFU	1.00	nm1	44.7	514	Blue
+Meas - A25	Default	3/31/2015	3:35 AM	4.40	NaN	RFU	1.00	nm1	4536.5	514	Blue
+Meas - A26	Default	3/31/2015	3:35 AM	7.64	NaN	RFU	1.00	nm1	2541.0	514	Blue
+Meas - A27	Default	3/31/2015	3:36 AM	3.28	NaN	RFU	1.00	nm1	6111.5	514	Blue
+Meas - A28	Default	3/31/2015	3:36 AM	10.00	NaN	RFU	1.00	nm1	189.7	514	Blue
+Meas - A29	Default	3/31/2015	3:37 AM	10.00	NaN	RFU	1.00	nm1	1751.7	514	Blue
+Meas - A30	Default	3/31/2015	3:37 AM	3.64	NaN	RFU	1.00	nm1	5442.8	514	Blue
+Blank	Default	3/31/2015	3:37 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas B1	Default	3/31/2015	3:41 AM	5.16	NaN	RFU	1.00	nm1	3825.8	514	Blue
+Meas B2	Default	3/31/2015	3:42 AM	4.08	NaN	RFU	1.00	nm1	4908.8	514	Blue
+Meas B3	Default	3/31/2015	3:42 AM	3.52	NaN	RFU	1.00	nm1	5712.4	514	Blue
+Meas B4	Default	3/31/2015	3:42 AM	1.48	NaN	RFU	1.00	nm1	3985.8	514	Blue
+Meas B5	Default	3/31/2015	3:43 AM	4.16	NaN	RFU	1.00	nm1	4784.8	514	Blue
+Meas B6	Default	3/31/2015	3:43 AM	3.40	NaN	RFU	1.00	nm1	5893.4	514	Blue
+Meas B7	Default	3/31/2015	3:43 AM	4.16	NaN	RFU	1.00	nm1	4823.2	514	Blue
+Meas B8	Default	3/31/2015	3:44 AM	3.92	NaN	RFU	1.00	nm1	5028.5	514	Blue
+Meas B9	Default	3/31/2015	3:44 AM	5.56	NaN	RFU	1.00	nm1	3588.0	514	Blue
+Meas B10	Default	3/31/2015	3:45 AM	4.04	NaN	RFU	1.00	nm1	4896.9	514	Blue
+Meas B11	Default	3/31/2015	3:45 AM	2.96	NaN	RFU	1.00	nm1	6753.4	514	Blue
+Meas C1	Default	3/31/2015	3:48 AM	3.20	NaN	RFU	1.00	nm1	6213.7	514	Blue
+Meas C2	Default	3/31/2015	3:49 AM	7.96	NaN	RFU	1.00	nm1	2447.9	514	Blue
+Meas C3	Default	3/31/2015	3:49 AM	5.80	NaN	RFU	1.00	nm1	3370.2	514	Blue
+Meas C4	Default	3/31/2015	3:49 AM	3.28	NaN	RFU	1.00	nm1	6043.5	514	Blue
+Meas C5	Default	3/31/2015	3:50 AM	3.32	NaN	RFU	1.00	nm1	5701.0	514	Blue
+Meas C6	Default	3/31/2015	3:50 AM	4.64	NaN	RFU	1.00	nm1	4295.3	514	Blue
+Meas C7	Default	3/31/2015	3:50 AM	3.48	NaN	RFU	1.00	nm1	5743.9	514	Blue
+Meas C8	Default	3/31/2015	3:51 AM	3.36	NaN	RFU	1.00	nm1	5921.6	514	Blue
+Meas C9	Default	3/31/2015	3:51 AM	6.20	NaN	RFU	1.00	nm1	3153.8	514	Blue
+Meas C10	Default	3/31/2015	3:51 AM	4.28	NaN	RFU	1.00	nm1	4627.6	514	Blue
+Blank	Default	3/31/2015	3:52 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas C11	Default	3/31/2015	3:53 AM	4.00	NaN	RFU	1.00	nm1	4978.7	514	Blue
+Meas C12	Default	3/31/2015	3:55 AM	3.84	NaN	RFU	1.00	nm1	5253.5	514	Blue
+Meas C13	Default	3/31/2015	3:55 AM	10.00	NaN	RFU	1.00	nm1	33.2	514	Blue
+Meas C14	Default	3/31/2015	3:55 AM	3.96	NaN	RFU	1.00	nm1	5060.5	514	Blue
+Meas C15	Default	3/31/2015	3:56 AM	7.88	NaN	RFU	1.00	nm1	2459.7	514	Blue
+Meas C16	Default	3/31/2015	3:56 AM	8.00	NaN	RFU	1.00	nm1	2398.8	514	Blue
+Meas C17	Default	3/31/2015	3:56 AM	3.68	NaN	RFU	1.00	nm1	5484.5	514	Blue
+Meas C18	Default	3/31/2015	3:57 AM	3.88	NaN	RFU	1.00	nm1	5113.1	514	Blue
+Meas C19	Default	3/31/2015	3:57 AM	6.48	NaN	RFU	1.00	nm1	3044.4	514	Blue
+Meas C20	Default	3/31/2015	3:57 AM	3.88	NaN	RFU	1.00	nm1	5125.3	514	Blue
+Blank	Default	3/31/2015	3:58 AM	10.00	NaN	RFU	1.00	nm1	15.4	514	Blue
+Blank	Default	3/31/2015	3:58 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue
+Meas E1	Default	3/31/2015	4:01 AM	2.40	NaN	RFU	1.00	nm1	8225.4	514	Blue
+Meas E2	Default	3/31/2015	4:01 AM	2.64	NaN	RFU	1.00	nm1	7595.3	514	Blue
+Meas E3	Default	3/31/2015	4:02 AM	2.56	NaN	RFU	1.00	nm1	7846.6	514	Blue
+Meas E4	Default	3/31/2015	4:02 AM	2.68	NaN	RFU	1.00	nm1	7495.0	514	Blue
+Meas E5	Default	3/31/2015	4:02 AM	2.76	NaN	RFU	1.00	nm1	7273.5	514	Blue
+Meas E6	Default	3/31/2015	4:03 AM	2.80	NaN	RFU	1.00	nm1	7121.2	514	Blue
+Meas E7	Default	3/31/2015	4:03 AM	2.48	NaN	RFU	1.00	nm1	8028.2	514	Blue
+Meas E8	Default	3/31/2015	4:03 AM	2.84	NaN	RFU	1.00	nm1	7047.1	514	Blue
+Meas E9	Default	3/31/2015	4:04 AM	2.48	NaN	RFU	1.00	nm1	8107.3	514	Blue
+Meas E10	Default	3/31/2015	4:04 AM	2.52	NaN	RFU	1.00	nm1	7960.9	514	Blue
+Meas E11	Default	3/31/2015	4:06 AM	5.52	NaN	RFU	1.00	nm1	3573.4	514	Blue
+Meas E12	Default	3/31/2015	4:06 AM	2.32	NaN	RFU	1.00	nm1	8604.9	514	Blue
+Meas E13	Default	3/31/2015	4:06 AM	1.92	NaN	RFU	1.00	nm1	10330.3	514	Blue
+Meas E14	Default	3/31/2015	4:07 AM	2.00	NaN	RFU	1.00	nm1	9939.4	514	Blue
+Meas E15	Default	3/31/2015	4:07 AM	1.92	NaN	RFU	1.00	nm1	10412.4	514	Blue
+Meas E16	Default	3/31/2015	4:08 AM	2.80	NaN	RFU	1.00	nm1	7170.6	514	Blue
+Blank	Default	3/31/2015	4:08 AM	10.00	NaN	RFU	1.00	nm1	0.0	514	Blue

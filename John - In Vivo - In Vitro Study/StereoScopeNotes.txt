@@ -1,0 +1,36 @@
+# 1a) Confirmed glue at needle tip
+# 1b) Glue delaminating from tip
+# 1c) Glue absent from needle tip
+# 1d) Can't tell
+# 1e) Potential air barrier
+
+A1	1b,1d	Base
+A2	1c	Base
+A3	1a	None
+A4	1a	None
+A5 	1c	Base,Needle
+A6	1a	Base
+A7	1c	Base,Middle
+A8	1c	Base	Didn't impede diffusion
+A9
+A10	1c	None	Wasn't a leaker but no glue, could have been an evaporated device
+A11	1a	Base,Middle
+A12	1a	Base
+A13	1c	Base,Needle
+A14	1a	None
+A15	1c	Base,Middle
+A16	1c	Base,Middle Glue at tip but not all the way in the hole
+A17
+A18	1a	None
+A19	1a,1d Base
+A20	1a	None
+A21	1a	Base	Bubbly glue, found to leak a bit
+A22	1a	None
+A23	1a	Base
+A24	1a	Base
+A25	1c	None
+A26	1c	Base,Middle,Needle	Bubble on side of needle
+A27	1c	Base,Needle
+A28	1a	None
+A29	1c	Base,Middle,Needle
+A30	1c	Base

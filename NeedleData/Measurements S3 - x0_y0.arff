@@ -1,0 +1,11 @@
+@relation LineMeasurements
+
+@attribute Measurement {angle,height,length,width}
+@attribute T {2}
+@attribute Value numeric
+
+@data
+angle,2,-2.562157
+height,2,195
+length,2,356.130594
+width,2,298

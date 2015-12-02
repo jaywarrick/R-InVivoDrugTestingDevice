@@ -50,7 +50,7 @@ Res - A5	Default	4/21/2015	6:01 AM	0.04	NaN	RFU	1.00	nm1	298015.8	514	Blue
 Res - A6	Too High
 Res - A7	Default	4/21/2015	6:02 AM	0.04	NaN	RFU	1.00	nm1	242537.0	514	Blue
 Res - A8	Default	4/21/2015	6:03 AM	0.04	NaN	RFU	1.00	nm1	494027.7	514	Blue
-No - A9		Default	4/21/2015	6:03 AM	10.00	NaN	RFU	1.00	nm1	73.8	514	Blue
+No - A9	Default	4/21/2015	6:03 AM	10.00	NaN	RFU	1.00	nm1	73.8	514	Blue
 Res - A10	Too High
 Res - A11	Too High
 Res - A12	Too High

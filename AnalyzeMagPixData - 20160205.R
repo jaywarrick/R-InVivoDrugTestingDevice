@@ -7,6 +7,17 @@ myOutside <- data.frame(day=c(1,3,10),IL8=c(84.3,707,953.5),MCP1=c(6.75,8.5,42),
 myInsideSDs <- data.frame(day=c(1,3,10),IL8=c(4080.7,4008.7,8078.4),MCP1=c(1555.6,220.9,422.2),VEGF=c(698.2,1177.9,8508.7))
 myInsideSDs <- data.frame(day=c(1,3,10),IL8=c(42.0,1174.1,124.3),MCP1=c(0.5,3,0),VEGF=c(364.2,3037.7,329.9))
 
+myInsideNorm <- myInside
+myInsideNorm$IL8 <- myInside$IL8/myOutside$IL8
+myInsideNorm$MCP1 <- myInside$MCP1/myOutside$IL8
+myInsideNorm$VEGF <- myInside$VEGF/myOutside$IL8
+
+plot(myInsideNorm$day,myInsideNorm$IL8, xlim=c(1,10), ylim=c(0,120), pch=20, col='green', bg='green', type='o', ylab='Median Bead Intensity [au]', xlab='Days After Implantation [days]')
+lines(myInsideNorm$day,myInsideNorm$MCP1, pch=20, col='red', bg='red', type='o')
+lines(myInsideNorm$day,myInsideNorm$VEGF, pch=20, col='blue', bg='blue', type='o')
+legend('topright', legend=c('IL8    ','MCP1    ','VEGF    '), col=c('green','red','blue'), lty=c(1,1,1), pch=c(20,20,20))
+
+
 plot(myInside$day,myInside$IL8, xlim=c(1,10), ylim=c(1,21000), pch=20, col='green', bg='green', type='o', ylab='Median Bead Intensity [au]', xlab='Days After Implantation [days]')
 lines(myInside$day,myInside$MCP1, pch=20, col='red', bg='red', type='o')
 lines(myInside$day,myInside$VEGF, pch=20, col='blue', bg='blue', type='o')

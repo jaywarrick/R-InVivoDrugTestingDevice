@@ -5,7 +5,7 @@ lines(times/(24*3600), out[,'C2'] + 0.024732, type='l', col='red')
 V1 <- (2.1e-6)/1000 # m^3 # LO
 V2 <- (400e-6)/1000 # m^3
 D <- (414e-12) # m^2/s
-r <- (0.006*24.5e-3)/2 - (0.00000625) # LO
+r <- (0.006*25.4e-3)/2 - (0.00000625) # LO
 A <- pi*(r)^2 # m^2
 L <- 0.135*25.4e-3 # 4e-3 # m
 dV2 <- ((1.5e-6)/1000)/(24*3600) # meters^3/s
@@ -18,14 +18,16 @@ derivs <- function (t, y, parms) {
      }) }
 times <- seq(from = 0, to = 29*24*3600, by = 3600)
 out   <- ode(y = yini, times = times, func = derivs, parms = NULL, method='rk4')
-#plot(out)
+plot(out)
 
-lines(times/(24*3600), out[,'C2'] + 0.024732, type='l', col='red')
+plot(times/(24*3600), 1-out[,'C1']/100 + 0.024732, type='l', col='green')
+plot(times/(24*3600), 1-out[,'C1']/100, type='l', col='green', ylim=c(0,1))
+lines(times/(24*3600), max(1-out[,'C1']/100)*out[,'C2']/max(out[,'C2']), type='l', col='red')
 
 V1 <- (2.3e-6)/1000 # m^3
 V2 <- (400e-6)/1000 # m^3
 D <- (414e-12) # m^2/s
-r <- (0.006*24.5e-3)/2
+r <- (0.006*25.4e-3)/2
 A <- pi*(r)^2 # m^2
 L <- 0.135*25.4e-3 # 4e-3 # m
 dV2 <- ((1.5e-6)/1000)/(24*3600) # meters^3/s

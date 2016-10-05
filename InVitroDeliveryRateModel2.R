@@ -1,3 +1,5 @@
+library(drc)
+library(drm)
 globalFctDefA <- list(name='global',fct=fctA, ssfct=ssfctA, names=c('alpha','tau'));
 
 cont <- drmc(constr = FALSE, errorm = TRUE, maxIt = 1000, method="SANN", noMessage = FALSE, relTol = 1e-07, rmNA=FALSE, useD = FALSE, trace = TRUE, otrace = TRUE, warnVal = -1, dscaleThres = 1e-15, rscaleThres = 1e-15)
@@ -78,8 +80,7 @@ getModel <- function(add=T, V1=(2.3e-6)/1000, V2=(400e-6)/1000, D=414e-12, r=(0.
 if(add)
 {
 
-}
-else
+}else
 {
      lines(times/(24*3600), out[,'C2'] + 0.02151873, type='l', col='red')
 }
@@ -106,7 +107,7 @@ derivs <- function (t, y, parms) {
           list(c(dC1, dC2))
      }) }
 times <- seq(from = 0, to = 29*24*3600, by = 3600)
-out   <- ode(y = yini, times = times, func = derivs, parms = NULL, method='rk4')
+out <- ode(y = yini, times = times, func = derivs, parms = NULL, method='rk4')
 lines(times/(24*3600), out[,'C2'] + 0.02151873, type='l', col='green')
 
 x

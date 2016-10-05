@@ -1,3 +1,5 @@
+source('~/.Rprofile')
+
 getMe <- function(name)
 {
      duh <- data[data$BaseName2 == name,]
@@ -99,43 +101,40 @@ getNeedleData <- function()
      return(list(short=myShortData, long=myLongData, ruler=myRulerData, conversionFactor=conversionFactor, calcs=myTemp))
 }
 
-getModel <- function(times=seq(from = 0, to = 29*24*3600, by = 3600), V1=(1.8e-6)/1000, V2=(400e-6)/1000, D=414e-12, r=(0.006*24.5e-3)/2, A=pi*(r)^2, L=3.34e-3, dV2=((1.5e-6)/1000)/(24*3600), yini=c(C1=100, C2=0), capsuleCoef=D*A/(L*V1), tubeCoef=D*A/L)
-#getModel <- function(times=seq(from = 0, to = 29*24*3600, by = 3600), V1=(2.136e-6)/1000, V2=(400e-6)/1000, D=414e-12, r=(0.006*24.5e-3)/2, A=pi*(r)^2, L=3.34e-3, dV2=((1.5e-6)/1000)/(24*3600), yini=c(C1=100, C2=0), tubeCoef=D*A/L, capsuleCoef=tubeCoef/V1)
+#getModel <- function(times=seq(from = 0, to = 29*24*3600, by = 3600), V1=(1.8e-6)/1000, V2=(400e-6)/1000, D=414e-12, r=(0.006*25.4e-3)/2, A=pi*(r)^2, L=3.34e-3, dV2=((1.5e-6)/1000)/(24*3600), yini=c(C1=100, C2=0), capsuleCoef=D*A/(L*V1), tubeCoef=D*A/L)
+getModel <- function(times=seq(from = 0, to = 29*24*3600, by = 3600), V1=(2.136e-6)/1000, V2=(400e-6)/1000, D=414e-12, r=(0.00625*25.4e-3)/2, A=pi*(r)^2, L=3.34e-3, yini=c(C1=100, C2=0, V2=(400e-6)/1000), tubeCoef=D*A/L, capsuleCoef=tubeCoef/V1)
 {
-     for(i in 1:length(capsuleCoef))
-     {
-
-     }
      require(deSolve)
      derivs <- function (t, y, parms) {
           with(as.list(y), {
                dC1 <- (capsuleCoef)*(C2-C1)
-               dC2 <- -(tubeCoef/(V2-dV2*t))*(C2-C1)
-               list(c(dC1, dC2))
+               dC2 <- -(tubeCoef/(V2))*(C2-C1)
+               dV2 <- -((1e-6)/1000)/(60*60*24)
+               list(c(dC1, dC2, dV2))
           }) }
 
      out <- ode(y = yini, times = times, func = derivs, parms = NULL)
-     return(list(times=times, C1=out[,'C1'], C2=out[,'C2'], params=list(capsuleCoef=capsuleCoef, tubeCoef=tubeCoef, dV2=dV2, yini=yini), VALD=list(V1=V1, V2=V2, r=r, A=A, L=L, D=D)))
+     return(list(times=times, C1=out[,'C1'], C2=out[,'C2'], V2=out[,'V2'], params=list(capsuleCoef=capsuleCoef, tubeCoef=tubeCoef, yini=yini), VALD=list(V1=V1, V2=V2, r=r, A=A, L=L, D=D)))
 }
 
-plotModel <- function(add=T, capsule=F, lty=1, col='black', ...)
+plotModel <- function(add=T, capsule=F, lty=1, col='black', normalizationFactor=1, log='', ...)
 {
      out <- getModel(...)
      if(add & !capsule)
      {
-          lines(out$time/(24*3600), out$C2 + 0.02151873, type='l', lty=lty, col=col)
+          lines(out$time/(24*3600), (out$C2 + 0.02151873)/normalizationFactor, type='l', lty=lty, col=col)
      }
      if(!add & !capsule)
      {
-          plot(out$time/(24*3600), out$C2 + 0.02151873, type='l', lty=lty, col=col)
+          plot(out$time/(24*3600), (out$C2 + 0.02151873)/normalizationFactor, type='l', lty=lty, col=col, log=log)
      }
      if(add & capsule)
      {
-          lines(out$time/(24*3600), out$C1, type='l', lty=lty, col=col)
+          lines(out$time/(24*3600), out$C1/normalizationFactor, type='l', lty=lty, col=col)
      }
      if(!add & capsule)
      {
-          plot(out$time/(24*3600), out$C1, type='l', lty=lty, col=col)
+          plot(out$time/(24*3600), out$C1/normalizationFactor, type='l', lty=lty, col=col, log=log)
      }
      return(out)
 }

@@ -7,6 +7,8 @@ library(foreign)
 library(Hmisc)
 library(pastecs)
 
+# 400 microliters was in each tube. The tube volumes were
+
 source('/Users/jaywarrick/Public/DropBox/GitHub/R-InVivoDrugTestingDevice/InVitroData_HelperFunctions.R')
 source('~/.Rprofile')
 
@@ -244,7 +246,7 @@ legend('topleft', legend=unique(temp$BaseName2), col=1:length(unique(temp$BaseNa
 #dev.off()
 
 
-# Plot Adjusted Delivery Rate Data (per day)
+# Plot Adjusted Delivery Rate Data (one day adjustment)
 #pdf('/Users/jaywarrick/Desktop/John - In Vivo - In Vitro Study/DeliveryRatePlot.pdf', width=7, height=5)
 temp <- data[deliveryData,]
 plot(x=c(), y=c(), main='Calibrated Delivery Concentrations (one cal curve)', xlab='Time [days]', ylab='Conc [%]', xlim=range(temp$relTimeStamp, na.rm=T), ylim=range(temp$AdjConc, na.rm=T))
@@ -258,7 +260,7 @@ for(name in unique(temp$BaseName2))
 legend('topleft', legend=unique(temp$BaseName2), col=1:length(unique(temp$BaseName2)), lty=1, cex=0.7, bg=rgb(1,1,1))
 #dev.off()
 
-# Plot Adjusted Delivery Rate Data (per day)
+# Plot Adjusted Delivery Rate Data (per day adjustment)
 #pdf('/Users/jaywarrick/Desktop/John - In Vivo - In Vitro Study/DeliveryRatePlot.pdf', width=7, height=5)
 temp <- data[deliveryData,]
 plot(x=c(), y=c(), main='Calibrated Delivery Concentrations (cal curve per day)', xlab='Time [days]', ylab='Conc [%]', xlim=range(temp$relTimeStamp, na.rm=T), ylim=range(temp$AdjConc2, na.rm=T))
@@ -272,10 +274,7 @@ for(name in unique(temp$BaseName2))
 legend('topleft', legend=unique(temp$BaseName2), col=1:length(unique(temp$BaseName2)), lty=1, cex=0.7, bg=rgb(1,1,1))
 #dev.off()
 
-# Plot Adjusted Delivery Rate Data
-#pdf('/Users/jaywarrick/Public/DropBox/GitHub/R-InVivoDrugTestingDevice/Figures/DeliveryRatePlot.pdf', width=7, height=5)
 temp <- data[deliveryData,]
-plot(x=c(), y=c(), main='% of Drug Delivered vs. Time', xlab='Time [days]', ylab='% of Drug Delivered', xlim=c(min(temp$relTimeStamp, na.rm=T),30), ylim=range(temp$AdjConc2, na.rm=T))
 i <- 1
 temp$AvgTime <- -1
 for(day in temp$Day)
@@ -292,9 +291,34 @@ for(day in unique(temp$Day))
      tempResults <- rbind(tempResults, data.frame(day=day, x=x, y=y, yerr=yerr))
 }
 
-lines(tempResults$x, tempResults$y, type='l')
+# Define various equations to fit the trajectory data with
+# Define y = e^(alpha*(x-tau))
+fun <- function(par, tempResults)
+{
+     # par = c(capsuleCoef=D*A/(L*V1), tubeCoef=D*A/L)
+     out <- getModel(times=tempResults$x*(24*3600), V1=par[1])#, tubeCoef=par[2])
+     #return(sum(tempResults$w*((tempResults$y-out$C2)^2)))
+     return(sum((tempResults$y-out$C2)^2))
+}
+
+# Self-starter function for determining initial conditions.
+ssfctA <- function(data)
+{
+     out <- getModel()
+     return(c(V1=out$VALD$V1))#, tubeCoef=out$params$tubeCoef))
+}
+
+# fit <- optim(c(V1=1.87e-9, ssfctA(0)[2]), fun, tempResults=tempResults)
+fit <- optim(c(V1=1.87e-9), fun, tempResults=tempResults)
+normalizationFactor <- 100*fit$par['V1']/((400e-6)/1000)
+
+# Plot Adjusted Delivery Rate Data
+pdf('/Users/jaywarrick/Public/DropBox/GitHub/R-InVivoDrugTestingDevice/Figures/DeliveryRatePlot.pdf', width=7, height=5)
+
+plot(x=c(), y=c(), main='', xlab='Time [days]', ylab='Normalized Concentration', xlim=c(min(temp$relTimeStamp, na.rm=T),30), ylim=range(0,1.05))
+lines(tempResults$x, tempResults$y/normalizationFactor, type='l')
 # points(tempResults$x, tempResults$y, pch=20, cex=0.3, col='black')
-errbar(tempResults$x, tempResults$y, yplus=tempResults$y+tempResults$yerr, yminus=tempResults$y-tempResults$yerr, add=T, pch=20, col='black', cex=0.8)
+errbar(tempResults$x, tempResults$y/normalizationFactor, yplus=tempResults$y/normalizationFactor+tempResults$yerr/normalizationFactor, yminus=tempResults$y/normalizationFactor-tempResults$yerr/normalizationFactor, add=T, pch=20, col='black', cex=0.8)
 #legend('topleft', legend=unique(temp$BaseName2), col=1:length(unique(temp$BaseName2)), lty=1, cex=0.7, bg=rgb(1,1,1))
 #dev.off()
 
@@ -303,4 +327,4 @@ tempResults$w <- 1/(tempResults$yerr)^2
 tempResults$w <- tempResults$w/sum(tempResults$w)
 
 print('Final Capsule Concentration Data for Delivery Rate Capsules')
-stat.desc(capData[capDeliveryData,]$AdjConc2)
+stat.desc(capData[capDeliveryData,]$AdjConc)
